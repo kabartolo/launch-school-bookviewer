@@ -1,0 +1,15 @@
+<div class="pure-menu">
+  <ul class="pure-menu-list">
+    <% @toc.each_with_index do |chapter_name, chapter_index| %>
+      <% chapter_number = chapter_index + 1 %>
+      
+      <li class="pure-menu-item">
+        <a href="/chapters/<%= chapter_number %>" class="pure-menu-link">
+          <%= chapter_name %>
+        </a>
+      </li>
+
+    <% end %>
+  </ul>
+</div>
+
